@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  chromedriver:
+    build:
+      context: .
+      dockerfile: Dockerfile-chromedriver
+    volumes:
+        - ./src:/var/src
